@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left, .middle, .right {
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .left {
+    width: 25%;
+    background-color: #e3f2fd;
+  }
+  
+  .middle {
+    width: 50%;
+    background-color: #e8f5e9;
+  }
+  
+  .right {
+    width: 25%;
+    background-color: #ffebee;
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  form input[type="text"],
+  form input[type="date"],
+  form select,
+  form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    padding: 10px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #1565c0;
+  }
+  
+  #card_pro, #card_todo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .project-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px 0;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .project-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+
+  /* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .project-item {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, border 0.3s ease, width 0.3s ease;
+  }
+  
+  .project-item:hover {
+    background-color: #0056b3;
+  }
+  
+  .project-item.active {
+    background-color: #0056b3 !important;
+    border: 2px solid #003f8a;
+    width: 70%;
+  }
+  
+  
+  #tasks-container {
+    margin-top: 20px;
+  }
+  
+  .task-item {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  
+  .task-item h3 {
+    margin: 0;
+  }
+  
+  .task-item p {
+    margin: 5px 0;
+  }
+
+  
+  
+  /* Dropdown styling */
+#project-select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  /* Task toggle button inside task item */
+  .task-item button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .task-item button:hover {
+    background-color: #eeeeee;
+  }
+  
+  /* Optional: Add classes for completed/incomplete tasks instead of inline styles */
+  .task-item.completed {
+    background-color: #2e7d32 !important; /* green */
+  }
+  
+  .task-item.incomplete {
+    background-color: #c62828 !important; /* red */
+  }
+  
+  /* Tasks container spacing */
+  #tasks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Fix for task item color override from earlier CSS */
+  .task-item {
+    background-color: transparent; /* Let JS set color or use classes */
+    transition: background-color 0.3s ease;
+  }
+  

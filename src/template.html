@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Projects Column -->
+    <div class="left">
+      <h1><i class="fas fa-folder"></i> Projects</h1>
+      <form id="project-form">
+        <div class="form-group">
+          <input type="text" name="project_name" placeholder="New project name" required>
+          <button type="submit"><i class="fas fa-plus"></i> Add</button>
+        </div>
+      </form>
+      <div id="projects-list" class="projects-container"></div>
+    </div>
+
+    <!-- Tasks Column -->
+    <div class="middle">
+      <h1><i class="fas fa-tasks"></i> Tasks</h1>
+      <div id="tasks-container" class="tasks-container"></div>
+    </div>
+
+    <!-- Add Task Column -->
+    <div class="right">
+      <h1><i class="fas fa-plus-circle"></i> Add Task</h1>
+      <form id="todo-form">
+        <div class="form-group">
+          <input type="text" name="title" placeholder="Title" required>
+        </div>
+        <div class="form-group">
+          <textarea name="description" placeholder="Description"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Due Date:</label>
+          <input type="date" name="dueDate" required>
+        </div>
+        <div class="form-group">
+          <label>Priority:</label>
+          <select name="priority" required>
+            <option value="1">Low</option>
+            <option value="2">Medium</option>
+            <option value="3">High</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Project:</label>
+          <select name="project" id="project-select" required>
+            <option value="">Select a project</option>
+          </select>
+        </div>
+        <button type="submit" class="submit-btn"><i class="fas fa-save"></i> Add Task</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
