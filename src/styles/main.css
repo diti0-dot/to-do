@@ -8,6 +8,12 @@ body {
     display: flex;
     height: 100vh;
   }
+
+ @media (max-width: 768px) {
+    .container {
+        display: block;
+    }
+}
   
   .left, .middle, .right {
     padding: 20px;
