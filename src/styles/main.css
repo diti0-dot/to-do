@@ -8,13 +8,7 @@ body {
     display: flex;
     height: 100vh;
   }
-
- @media (max-width: 768px) {
-    .container {
-        display: block;
-    }
-}
-  
+ 
   .left, .middle, .right {
     padding: 20px;
     overflow-y: auto;
@@ -199,4 +193,9 @@ body {
     background-color: transparent; /* Let JS set color or use classes */
     transition: background-color 0.3s ease;
   }
-  
+
+ @media (max-width: 768px) {
+    .container {
+        display: block;
+    }
+}
